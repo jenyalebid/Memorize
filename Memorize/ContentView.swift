@@ -1,3 +1,4 @@
+
 //
 //  ContentView.swift
 //  Memorize
@@ -8,9 +9,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(lineWidth: 3)
+            Text("Hello There")
+        }
+        .foregroundColor(.red)
+        .padding()
+
     }
 }
 
